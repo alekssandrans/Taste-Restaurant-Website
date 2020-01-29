@@ -1,2 +1,2 @@
 # MyRestaurant
-Course projet website
+Course project website
