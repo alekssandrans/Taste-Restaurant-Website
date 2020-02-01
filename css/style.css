@@ -2,17 +2,18 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
-    color:black;
+    color:rgb(226,226,226);
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d4954;
+    background-color: #6c5549;
     font-family: 'Poppins', sans-serif;
 }
 .logo{
@@ -29,11 +30,21 @@ nav{
 .nav-links li{
     list-style: none;
 }
+#active-nav-link{
+    color:wheat;
+}
+
 .nav-links a{
     color: rgb(226,226,226);
+    opacity: 0.8;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
+    transition: opacity 0.5s ease-in-out;
+   -webkit-transition: opacity 0.5s ease-in-out;
+}
+.nav-links a:hover{
+    opacity:1;
 }
 
 /* Burger */
@@ -58,9 +69,9 @@ nav{
     .nav-links{
         position: absolute;
         right:0px;
-        height: 92vh;
+        height: 100%;
         top: 8vh;
-        background-color: #5d4954;
+        background-color: #6c5549;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,16 +79,145 @@ nav{
         justify-content: flex-start;
         padding-top: 20px;
         display: none;
+        z-index: 5
     }
     .nav-links li{
-        padding: 40px;
+        padding: 25px;
     }
     .burger{
         display: block;
     }
 }
-
 .nav-active{
     display: flex;
+}
+
+.slideshow{
+    position:relative;
+    text-align:center;
+}
+.slideshow img{
+    width:100%;
+}
+.slideshow a{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-decoration: underline;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    padding:14px;
+}
+.slideshow a:hover, .mobile-slideshow a:hover{
+    opacity: 1;
+}
+.active-link-text{
+    background-color: #6c5549;
+}
+.image-links-text{
+    position: absolute;
+    top: 25%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+}
+.mobile-slideshow{
+    display:none;
+    z-index: -10;
+}
+.mobile-slideshow img{
+    width: 100%;
+}
+.relative-containter{
+    position: relative;
+}
+.mobile-slideshow a{
+    position: absolute;
+    top: 26%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    background-color: #6c5549;
+}
+@media screen and (max-width: 768px){
+    .mobile-slideshow{
+        display:block;
+    }
+    .slideshow{
+        display:none;
+    }
+}
+
+.footer-background{
+    background-color: #6c5549;
+    min-height: 32vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.col{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+ @media screen and (max-width: 768px){
+    .footer-background{
+        flex-direction: column;
+        align-content: center;
+        z-index: 10;
+    }
+    .col{
+        width:90%;
+        padding:5%;
+        z-index: 10;
+    }
+}
+.restaurant-name{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contact-details, .working-hours, .restaurant-name{
+    align-self: center;
+    color: rgb(226,226,226);
+    opacity: 0.8;
+    text-align: center;
+}
+.contact-details h4{
+    text-transform: uppercase;
+}
+.contact-details h4, .working-hours h4{
+    margin-bottom: 15px;
+}
+.contact-details .phone, .email{
+    padding-top:5px;
+}
+.contact-details .social-media{
+    padding-top:8px;
+}
+.contact-details i{
+    padding: 2px;
+}
+.contact-details a{
+    transition: color 0.5s ease-in-out;
+   -webkit-transition: color 0.5s ease-in-out;
+}
+.contact-details a:hover{
+    color: white;
+}
+.working-hours a{
+    transition: color 0.5s ease-in-out;
+   -webkit-transition: color 0.5s ease-in-out;
+}
+.working-hours a:hover{
+    color: black;
 }
 
