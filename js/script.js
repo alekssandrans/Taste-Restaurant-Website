@@ -6,24 +6,39 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
     });
 }
-const changeImage1 = () => {
-    document.getElementById('home-image').src ="C:\\Users\\rv\\Desktop\\MyRestaurant\\img\\home-1.jpg";
+const showFoodImage = () => {
+    document.getElementById('home-image1').style.display ="block";
+    document.getElementById('home-image2').style.display ="none";
+    document.getElementById('home-image3').style.display ="none";
+
     document.getElementById('food').classList.add('active-link-text');
     document.getElementById('wine').classList.remove('active-link-text');
     document.getElementById('view').classList.remove('active-link-text');
 
+    document.getElementById('home-image1').style.animation="imageFade 1s ease-in-out";
 }
-const changeImage2 = () => {
-    document.getElementById('home-image').src ="C:\\Users\\rv\\Desktop\\MyRestaurant\\img\\home-2.jpg";
+const showWineImage = () => {
+    document.getElementById('home-image1').style.display ="none";
+    document.getElementById('home-image2').style.display ="block";
+    document.getElementById('home-image3').style.display ="none";
+
     document.getElementById('wine').classList.add('active-link-text');
     document.getElementById('food').classList.remove('active-link-text');
     document.getElementById('view').classList.remove('active-link-text');
+
+    document.getElementById('home-image2').style.animation="imageFade 1s ease-in-out";
 }
-const changeImage3 = () => {
-    document.getElementById('home-image').src ="C:\\Users\\rv\\Desktop\\MyRestaurant\\img\\home-3.jpg";
+const showViewImage = () => {
+    document.getElementById('home-image1').style.display ="none";
+    document.getElementById('home-image2').style.display ="none";
+    document.getElementById('home-image3').style.display ="block";
+
     document.getElementById('view').classList.add('active-link-text');
     document.getElementById('wine').classList.remove('active-link-text');
     document.getElementById('food').classList.remove('active-link-text');
+
+    document.getElementById('home-image3').style.animation="imageFade 1s ease-in-out";
 }
 
 navSlide();
+
