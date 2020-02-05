@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'
         integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -42,6 +43,34 @@
             </div>
         </nav>
     </header>
+
+    <div class="reservation-container">
+        <img src="img/reservation.jpg">
+
+        <form class="reservation-form">
+            <div class="form-row header-row">
+                <span class="reservation-form-header">Book your table</span>
+            </div>
+            <div class="form-row">
+                <input required id="name" type="text" name="name" placeholder="Name*">
+                <input required id="email" type="email" name="email" placeholder="Email*">
+            </div>
+            <div class="form-row">
+                <input required id="phone" type="tel" pattern="[0-9]{10}" maxlength="10" name="phone"
+                    placeholder="Phone*">
+                <input required id="numberOfGuests" type="text" name="numberOfGuests" placeholder="Number of Guests*">
+            </div>
+            <div class="form-row">
+                <input required id="date" type="text" name="date" placeholder="DD.MM.YYYYY*">
+                <input required id="time" type="text" name="phone" placeholder="HH:MM*">
+            </div>
+            <div class="form-row submit-button">
+                <input type="submit" value="Book Now">
+            </div>
+        </form>
+    </div>
+
+    
 
     <footer>
         <div id="contact" class="footer-background">

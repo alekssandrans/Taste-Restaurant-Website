@@ -335,3 +335,188 @@ nav{
     color: black;
 }
 
+/* Menu Style */
+.menu-container{
+    margin: 100px 0px; 
+}
+.menu-navigation{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px){
+    .menu-container{
+        margin: 30px 0px;
+    }
+    .menu-navigation{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.menu-navigation div{
+    margin: 20px;
+}
+.menu-navigation a{
+    color: #b49383;
+    font-family: 'Dancing Script', cursive; 
+    font-size: 40px;
+}
+.menu-navigation a:hover{
+    border-bottom: 1.5px solid #b49383;
+}   
+.menu-navigation a::before, .menu-navigation a::after{
+    content: "~";
+}
+.menu{
+    background-color: #faf5f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:20px;
+    width:45%;
+}
+@media screen and (max-width: 768px){
+    .item{
+        width:58%;
+    }
+}
+@media screen and (max-width: 420px){
+    .item{
+        width:100%;
+    }
+}
+.item img{
+    display: inline-block;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.item-header{
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.item-name, .item-price{
+    font-weight: 600;
+}
+.item-price{
+    color: #d34141
+}
+.item-description{
+    color: #a5a5a5;
+}
+.main-menu{
+    display: block;
+}
+.desserts-menu{
+    display: none;
+}
+.drinks-menu{
+    display: none;
+}
+
+.active-menu{
+    border-bottom: 1.5px solid #b49383;
+}
+
+/* Reservation style */
+.reservation-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reservation-container img{
+    display: inline-block;
+    width: 50%;
+    height: auto;
+}
+.reservation-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+}
+@media screen and (max-width: 1430px){
+    .reservation-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .reservation-container img{
+        width: 100%;
+    }
+    .reservation-form{
+        width: 100%;
+        margin: 80px 0px;
+    }
+    .reservation-form input{
+        width: 300px;
+        font-size: 18px; 
+        margin: 10px 30px;
+    }
+    .submit-button input{
+        font-size: 16px;
+    }
+    .reservation-form-header{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 420px){
+    .reservation-form{
+        width: 50%;
+    }
+}
+.form-row{
+    margin: 20px;
+}
+.reservation-form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #bcc0c4;
+    transition: border-bottom-color 0.5s ease-in-out;
+    margin: 10px;
+    padding: 2px;
+}
+.reservation-form input:focus{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #6c5549;
+}
+.submit-button input{
+    background-color: #6c5549;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+   -webkit-transition: opacity 0.3s ease-in-out;
+   -moz-transition: opacity 0.3s ease-in-out;
+   width: 120px;
+   border-radius: 30px;
+}
+.submit-button input:hover{
+    opacity: 0.9;
+}
+.reservation-form-header{
+    color: #b49383;
+    font-family: 'Dancing Script', cursive; 
+    font-size: 32px;
+}
+.reservation-form-header::before, .reservation-form-header::after{
+    content: "~";
+}
+.header-row{
+    text-align: center;
+}

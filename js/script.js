@@ -39,6 +39,33 @@ const showViewImage = () => {
 
     document.getElementById('home-image3').style.animation="imageFade 1s ease-in-out";
 }
+const showMainMenu = () => {
+    document.getElementsByClassName('main-menu')[0].style.display ="block";
+    document.getElementsByClassName('drinks-menu')[0].style.display ="none";
+    document.getElementsByClassName('desserts-menu')[0].style.display ="none";
+
+    document.getElementsByClassName('main')[0].classList.add("active-menu");
+    document.getElementsByClassName('desserts')[0].classList.remove("active-menu");
+    document.getElementsByClassName('drinks')[0].classList.remove("active-menu");
+}
+const showDessertsMenu = () => {
+    document.getElementsByClassName('main-menu')[0].style.display ="none";
+    document.getElementsByClassName('desserts-menu')[0].style.display ="block";
+    document.getElementsByClassName('drinks-menu')[0].style.display ="none";
+
+    document.getElementsByClassName('main')[0].classList.remove("active-menu");
+    document.getElementsByClassName('desserts')[0].classList.add("active-menu");
+    document.getElementsByClassName('drinks')[0].classList.remove("active-menu");
+}
+const showDrinksMenu = () => {
+    document.getElementsByClassName('main-menu')[0].style.display ="none";
+    document.getElementsByClassName('desserts-menu')[0].style.display ="none";
+    document.getElementsByClassName('drinks-menu')[0].style.display ="block";
+
+    document.getElementsByClassName('main')[0].classList.remove("active-menu");
+    document.getElementsByClassName('desserts')[0].classList.remove("active-menu");
+    document.getElementsByClassName('drinks')[0].classList.add("active-menu");
+}
 
 navSlide();
 
