@@ -52,25 +52,31 @@
                 <span class="reservation-form-header">Book your table</span>
             </div>
             <div class="form-row">
-                <input required id="name" type="text" name="name" placeholder="Name*">
-                <input required id="email" type="email" name="email" placeholder="Email*">
+                <input id="name" type="text" name="name" placeholder="Name*">
+                <input id="email" type="text" name="email" placeholder="Email*">
             </div>
             <div class="form-row">
-                <input required id="phone" type="tel" pattern="[0-9]{10}" maxlength="10" name="phone"
-                    placeholder="Phone*">
-                <input required id="numberOfGuests" type="text" name="numberOfGuests" placeholder="Number of Guests*">
+                <input id="phone" type="text" name="phone" placeholder="Phone*">
+                <input id="numberOfGuests" type="text" name="numberOfGuests" placeholder="Number of Guests*">
             </div>
             <div class="form-row">
-                <input required id="date" type="text" name="date" placeholder="DD.MM.YYYYY*">
-                <input required id="time" type="text" name="phone" placeholder="HH:MM*">
+                <input id="date" type="text" name="date" placeholder="DD.MM.YYYYY*">
+                <input id="time" type="text" name="time" placeholder="HH:MM*">
+            </div>
+            <div id="messages">
+                <div class="success">
+                    You have a reservation for <span class="reservation-time"></span> on <span
+                        class="reservation-date"></span>
+                </div>
             </div>
             <div class="form-row submit-button">
                 <input type="submit" value="Book Now">
             </div>
+
         </form>
     </div>
 
-    
+
 
     <footer>
         <div id="contact" class="footer-background">
@@ -115,6 +121,10 @@
         </div>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
     <script src="js/script.js"></script>
 </body>
 

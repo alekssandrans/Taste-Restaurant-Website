@@ -478,6 +478,9 @@ nav{
     }
 }
 .form-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 20px;
 }
 .reservation-form input{
@@ -493,7 +496,7 @@ nav{
     background-color: transparent;
     border-bottom: 1px solid #6c5549;
 }
-.submit-button input{
+.submit-button input, .submit-button input:active, .submit-button input:focus{
     background-color: #6c5549;
     color: white;
     text-transform: uppercase;
@@ -520,3 +523,18 @@ nav{
 .header-row{
     text-align: center;
 }
+.messages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.error{
+    color: red;
+    text-align: center;
+}
+.success{
+    color: green;
+    text-align: center;
+    display: none;
+}
+
