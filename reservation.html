@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'
         integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <nav>
             <div class="logo">
                 <a href="index.html">
-                    <h4>Taste</h4>
+                    <span>Taste</span>
                 </a>
             </div>
             <ul class="nav-links">
@@ -46,8 +46,8 @@
 
     <div class="reservation-container">
         <img src="img/reservation.jpg">
-
-        <form class="reservation-form">
+        
+        <form class="reservation-form" method="POST">
             <div class="form-row header-row">
                 <span class="reservation-form-header">Book your table</span>
             </div>
@@ -66,7 +66,7 @@
             <div id="messages">
                 <div class="success">
                     You have a reservation for <span class="reservation-time"></span> on <span
-                        class="reservation-date"></span>
+                        class="reservation-date"></span> .
                 </div>
             </div>
             <div class="form-row submit-button">
@@ -75,8 +75,6 @@
 
         </form>
     </div>
-
-
 
     <footer>
         <div id="contact" class="footer-background">
@@ -125,7 +123,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/reservation-form.js"></script>
 </body>
 
 </html>

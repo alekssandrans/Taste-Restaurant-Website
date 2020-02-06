@@ -16,13 +16,13 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #6c5549;
-    font-family: 'Poppins', sans-serif;
 }
 .logo{
     color: rgb(226,226,226);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size:20px;
+    font-weight: 600;
 }
 .nav-links{
     display: flex;
@@ -71,14 +71,13 @@ nav{
         right:0px;
         height: 100%;
         top: 8vh;
-        background-color: #6c5549;
-        display: flex;
         flex-direction: column;
         align-items: center;
-        width:50%;
         justify-content: flex-start;
-        padding-top: 20px;
+        background-color: #6c5549;
         display: none;
+        width:50%;
+        padding-top: 20px;
         z-index: 5
     }
     .nav-links li{
@@ -163,6 +162,7 @@ nav{
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;   
     background-color: #6c5549;
+    cursor: pointer;
 }
 @media screen and (max-width: 768px){
     .mobile-slideshow{
@@ -247,12 +247,12 @@ nav{
 /* Footer Banner Images Style */
 .images{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .images img{
-    height:365px;
-    padding:2px;
+    height:370px;
+    padding: 3px;
     opacity:0.9;
     transition: opacity 0.3s ease-in-out;
     -webkit-transition: opacity 0.3s ease-in-out;
@@ -261,7 +261,7 @@ nav{
 .images img:hover{
     opacity: 1;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1400px){
     .images img{
         height:500px;
     }
@@ -423,7 +423,6 @@ nav{
 .drinks-menu{
     display: none;
 }
-
 .active-menu{
     border-bottom: 1.5px solid #b49383;
 }
